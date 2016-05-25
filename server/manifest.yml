@@ -1,0 +1,10 @@
+---
+timeout: 60
+instances: 1
+memory: 512M
+env:
+    JAVA_OPTS: -Djava.security.egd=file:///dev/urandom
+
+applications:
+- name: server-auth
+  path: target/server-1.0.0-MASTER.jar
